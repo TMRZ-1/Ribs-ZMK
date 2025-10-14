@@ -1,2 +1,0 @@
-config SHIELD_ribs
-    def_bool $(shields_list_contains,ribs)
