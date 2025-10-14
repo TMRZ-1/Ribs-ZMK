@@ -1,4 +1,0 @@
-menuconfig SHIELD_RIBS
-    bool "Use Ribs shield"
-    default y
-endmenu
