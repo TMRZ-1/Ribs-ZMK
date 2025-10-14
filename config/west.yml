@@ -6,7 +6,7 @@ manifest:
 
   remotes:
     - name: zmkfirmware
-      url-base: https://github.com/zmkfirmware
+      url-base: https://github.com/TMRZ-1/Ribs-ZMK
 
   projects:
     - name: zmk
