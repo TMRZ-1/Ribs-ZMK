@@ -1,0 +1,9 @@
+remotes:
+  - name: tmrz
+    url-base: https://github.com/TMRZ-1
+
+projects:
+  - name: config
+    path: config
+    remote: tmrz
+    revision: main
