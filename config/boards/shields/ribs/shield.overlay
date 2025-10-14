@@ -1,0 +1,6 @@
+&gpio0 {
+    ribs_button: button {
+        gpios = <&gpio0 15 GPIO_ACTIVE_LOW>;
+        label = "Ribs Button";
+    };
+};
