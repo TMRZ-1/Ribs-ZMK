@@ -1,18 +1,11 @@
 manifest:
-  version: 0.13
-
-  defaults:
-    remote: zmkfirmware
-
   remotes:
     - name: zmkfirmware
-      url-base: https://github.com/TMRZ-1/Ribs-ZMK
-
+      url-base: https://github.com/zmkfirmware
   projects:
     - name: zmk
-      path: zmk
-      revision: main
       remote: zmkfirmware
-
+      revision: main
+      import: app/west.yml
   self:
     path: config
