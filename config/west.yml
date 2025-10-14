@@ -1,9 +1,18 @@
-remotes:
-  - name: tmrz
-    url-base: https://github.com/TMRZ-1
+manifest:
+  version: 0.13
 
-projects:
-  - name: config
+  defaults:
+    remote: zmkfirmware
+
+  remotes:
+    - name: zmkfirmware
+      url: https://github.com/zmkfirmware
+
+  projects:
+    - name: zmk
+      path: zmk
+      revision: main
+      remote: zmkfirmware
+
+  self:
     path: config
-    remote: tmrz
-    revision: main
