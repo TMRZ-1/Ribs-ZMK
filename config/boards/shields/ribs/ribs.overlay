@@ -16,6 +16,6 @@
                     <&gpio0 22 GPIO_ACTIVE_LOW>,
                     <&gpio0 26 GPIO_ACTIVE_LOW>,
                     <&gpio0 27 GPIO_ACTIVE_LOW>;
-        diode-direction = <COL2ROW>;
+        diode-direction = "col2row";
     };
 };
