@@ -5,5 +5,5 @@ jobs:
   build:
     uses: zmkfirmware/zmk/.github/workflows/build-user-config.yml@main
     secrets: inherit
-    with:
-      extra-cmake-args: -DZMK_CONFIG=${{ github.workspace }}/config
+    env:
+      ZMK_CONFIG: ${{ github.workspace }}/config
