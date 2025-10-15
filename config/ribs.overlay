@@ -5,10 +5,17 @@
         zmk,kscan = &kscan0;
     };
 
+    matrix_transform0: matrix-transform {
+        compatible = "zmk,matrix-transform";
+        rows = <4>;
+        cols = <10>;
+    };
+
     kscan0: kscan {
-        compatible = "zmk,kscan-gpio";  // <- zmiana
+        compatible = "zmk,kscan-gpio";
         label = "KSCAN";
         diode-direction = "col2row";
+        matrix-transform = <&matrix_transform0>;
 
         row-gpios = <&gpio0 2 GPIO_ACTIVE_LOW>,
                     <&gpio0 3 GPIO_ACTIVE_LOW>,
