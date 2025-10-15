@@ -3,4 +3,17 @@ on: [push, pull_request, workflow_dispatch]
 
 jobs:
   build:
-    uses: zmkfirmware/zmk/.github/workflows/build-user-config.yml@main
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v3
+
+      - name: Init west and update modules
+        run: |
+          pip install west
+          west init -l .
+          west update
+
+      - name: Build firmware
+        run: |
+          west build -d build/nice_nano_v2 -b nice_nano_v2 -- -DZMK_CONFIG=./config
